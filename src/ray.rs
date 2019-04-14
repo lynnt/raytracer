@@ -10,7 +10,7 @@ impl Ray {
         Ray { a: a, b: b }
     }
 
-    pub fn point_at_parameter(self, magnitude : f64) -> Vector3<f64> { self.a + magnitude * self.b }
+    pub fn point_at_parameter(&self, magnitude : f64) -> Vector3<f64> { self.a + magnitude * self.b }
 }
 
 /*

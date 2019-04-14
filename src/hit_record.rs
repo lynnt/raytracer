@@ -8,5 +8,5 @@ pub struct HitRecord {
 }
 
 pub trait HitTable {
-    fn hit(&self, r: &Ray, t_min: f64, t_max: f64, rec: HitRecord);
+    fn hit(&self, r: &Ray, t_min: f64, t_max: f64, rec: &mut HitRecord) -> bool;
 }
